@@ -24,6 +24,5 @@ createApp({
         nextSlide() {
             this.currentSlide = (this.currentSlide === this.slides.length - 1) ? 0 : this.currentSlide + 1;
         },
-        
     }
 }).mount('#app');
