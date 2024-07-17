@@ -16,6 +16,10 @@ createApp({
         };
     },
     methods: {
+        // Metodo per andare alla slide precedente
+        prevSlide() {
+            this.currentSlide = (this.currentSlide === 0) ? this.slides.length - 1 : this.currentSlide - 1;
+        },
         
     }
 }).mount('#app');
