@@ -24,5 +24,9 @@ createApp({
         nextSlide() {
             this.currentSlide = (this.currentSlide === this.slides.length - 1) ? 0 : this.currentSlide + 1;
         },
+        // Metodo per andare a una specifica slide
+        goToSlide(index) {
+            this.currentSlide = index;
+        }
     }
 }).mount('#app');
