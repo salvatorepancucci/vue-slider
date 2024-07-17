@@ -38,5 +38,10 @@ createApp({
         startAutoplay() {
             this.autoplayTimer = setInterval(this.nextSlide, 3000);
         },
+        // Metodo per fermare l'autoplay
+        pauseAutoplay() {
+            clearInterval(this.autoplayTimer);
+            this.autoplayTimer = null;
+        }
     }
 }).mount('#app');
