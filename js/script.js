@@ -20,6 +20,10 @@ createApp({
         prevSlide() {
             this.currentSlide = (this.currentSlide === 0) ? this.slides.length - 1 : this.currentSlide - 1;
         },
+        // Metodo per andare alla slide successiva
+        nextSlide() {
+            this.currentSlide = (this.currentSlide === this.slides.length - 1) ? 0 : this.currentSlide + 1;
+        },
         
     }
 }).mount('#app');
