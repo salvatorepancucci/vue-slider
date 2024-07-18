@@ -15,7 +15,7 @@
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
 
-                <div class="item" v-for="(slide, index) in slides" :key="index" v-show="currentSlide === index">
+                <div class="item" @mouseover="pauseAutoplay" @mouseleave="startAutoplay" v-for="(slide, index) in slides" :key="index" v-show="currentSlide === index">
                     <img :src="slide.img" :alt="slide.title" />
                     <div class="text">
                         <h3>{{ slide.title }}</h3>
